@@ -5,7 +5,7 @@ actor {
     stable var submittedNames : [Text] = [];
     
     // Update call to greet and store name
-    public shared(msg) func greet(name : Text) : async Text {
+    public shared func greet(name : Text) : async Text {
         submittedNames := Array.append(submittedNames, [name]);
         return "Hello, " # name # "!";
     };
