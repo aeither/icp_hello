@@ -21,6 +21,10 @@ dfx stop
 
 --
 
+dfx deploy --network ic --with-cycles 1_000_000_000_000
+
+--
+
 rm -rf target
 
 dfx generate
